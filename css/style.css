@@ -240,5 +240,20 @@ grid-template-columns:1fr;
 .hero-text h1{
 font-size:32px;
 }
+@media(max-width:768px){
+
+  .nav-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+}  
 
 }
