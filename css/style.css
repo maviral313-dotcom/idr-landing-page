@@ -1,4 +1,7 @@
 *{
+  box-sizing: border-box;
+}
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -9,11 +12,14 @@ body{
 background:#ffffff;
 color:#222;
 }
-
+html, body{
+  overflow-x: hidden;
+}
 .container{
 width:90%;
 max-width:1200px;
 margin:auto;
+overflow:hidden;
 }
 
 
@@ -72,7 +78,11 @@ grid-template-columns:1fr 1fr;
 align-items:center;
 gap:40px;
 }
-
+@media(max-width:768px){
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+}
 .hero-text h1{
 font-size:45px;
 margin-bottom:20px;
@@ -88,8 +98,10 @@ line-height:1.6;
 }
 
 .hero-image img{
-width:100%;
-max-width: 500px;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  display:block;
 }
 
 .btn{
